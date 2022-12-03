@@ -1,7 +1,7 @@
 require './solver'
 
 describe Solver do
-  describe '#factorial' do
+  describe '.factorial' do
     it 'Return 1 when given 0' do
       num = Solver.new
       expect(num.factorial(0)).to eq(1)
@@ -12,13 +12,13 @@ describe Solver do
     end
   end
 
-  describe '#reverse' do
+  describe '.reverse' do
     it 'should return kcinos when given sonick' do
       expect(Solver.reverse('sonick')).to eq('kcinos')
     end
   end
 
-  describe '#fizzbuzz' do
+  describe '.fizzbuzz' do
     context 'When N is divisible by 3' do
       it 'should return "fizz"' do
         expect(Solver.fizzbuzz(3)).to eq('fizz')
