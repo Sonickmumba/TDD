@@ -1,6 +1,7 @@
 class Solver
-  def factorial(n)
-    return 1 if n == 0
-    n * factorial(n-1)
+  def factorial(num)
+    return 1 if num.zero?
+
+    num * factorial(num - 1)
   end
 end
