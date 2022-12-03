@@ -1,3 +1,5 @@
+require './solver'
+
 describe Solver do
   describe factorial do
     it 'Return 1 when given 0' do
